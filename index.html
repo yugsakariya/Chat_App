@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        #chat-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            height: 400px;
+            overflow-y: scroll;
+        }
+        #message-input {
+            width: calc(100% - 100px);
+            padding: 10px;
+        }
+        #send-button {
+            padding: 10px;
+        }
+        .message {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simple Chat App</h1>
+    <div id="chat-container"></div>
+    <input type="text" id="message-input" placeholder="Type your message here..." />
+    <button id="send-button">Send</button>
+
+    <script src="chat.js"></script>
+</body>
+</html>
